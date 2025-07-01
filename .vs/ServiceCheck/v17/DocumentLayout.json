@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|c:\\users\\kaios\\source\\repos\\servicecheck\\servicecheck\\servicecheck.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|solutionrelative:servicecheck\\servicecheck.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|c:\\users\\kaios\\source\\repos\\servicecheck\\servicecheck\\data\\servicecheckdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|solutionrelative:servicecheck\\data\\servicecheckdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|c:\\users\\kaios\\source\\repos\\servicecheck\\servicecheck\\repositories\\webapiserversrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|solutionrelative:servicecheck\\repositories\\webapiserversrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|c:\\users\\kaios\\source\\repos\\servicecheck\\servicecheck\\models\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|solutionrelative:servicecheck\\models\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|c:\\users\\kaios\\source\\repos\\servicecheck\\servicecheck\\models\\webapiservers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServiceCheck\\ServiceCheck.csproj|solutionrelative:servicecheck\\models\\webapiservers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WebApiServersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\Repositories\\WebApiServersRepository.cs",
+              "RelativeDocumentMoniker": "ServiceCheck\\Repositories\\WebApiServersRepository.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\Repositories\\WebApiServersRepository.cs",
+              "RelativeToolTip": "ServiceCheck\\Repositories\\WebApiServersRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T03:41:06.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\Models\\ModelBase.cs",
+              "RelativeDocumentMoniker": "ServiceCheck\\Models\\ModelBase.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\Models\\ModelBase.cs",
+              "RelativeToolTip": "ServiceCheck\\Models\\ModelBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T03:30:38.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebApiServers.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\Models\\WebApiServers.cs",
+              "RelativeDocumentMoniker": "ServiceCheck\\Models\\WebApiServers.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\Models\\WebApiServers.cs",
+              "RelativeToolTip": "ServiceCheck\\Models\\WebApiServers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T03:29:53.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceCheckDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\Data\\ServiceCheckDbContext.cs",
+              "RelativeDocumentMoniker": "ServiceCheck\\Data\\ServiceCheckDbContext.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\Data\\ServiceCheckDbContext.cs",
+              "RelativeToolTip": "ServiceCheck\\Data\\ServiceCheckDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T03:25:48.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceCheck",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\ServiceCheck.csproj",
+              "RelativeDocumentMoniker": "ServiceCheck\\ServiceCheck.csproj",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServiceCheck\\ServiceCheck\\ServiceCheck.csproj",
+              "RelativeToolTip": "ServiceCheck\\ServiceCheck.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-01T03:25:31.984Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
