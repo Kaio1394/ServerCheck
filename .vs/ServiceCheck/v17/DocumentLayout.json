@@ -62,7 +62,8 @@
               "RelativeToolTip": "ServiceCheck\\Repositories\\Interfaces\\IWebApiServersRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:58:29.328Z"
+              "WhenOpened": "2025-07-01T03:58:29.328Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -74,7 +75,8 @@
               "RelativeToolTip": "ServiceCheck\\ViewModels\\WebApiServersViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:56:29.5Z"
+              "WhenOpened": "2025-07-01T03:56:29.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -86,7 +88,8 @@
               "RelativeToolTip": "ServiceCheck\\Repositories\\WebApiServersRepository.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:41:06.84Z"
+              "WhenOpened": "2025-07-01T03:41:06.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -98,7 +101,8 @@
               "RelativeToolTip": "ServiceCheck\\Models\\ModelBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:30:38.862Z"
+              "WhenOpened": "2025-07-01T03:30:38.862Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -123,7 +127,8 @@
               "RelativeToolTip": "ServiceCheck\\Data\\ServiceCheckDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:25:48.682Z"
+              "WhenOpened": "2025-07-01T03:25:48.682Z",
+              "EditorCaption": ""
             }
           ]
         }
