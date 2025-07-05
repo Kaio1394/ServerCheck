@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServerCheck"
+        xmlns:views="clr-namespace:ServerCheck.Views"
         mc:Ignorable="d"
         Title="ServerCheck" Height="450" Width="800">
     <Grid>
@@ -52,7 +53,7 @@
                 
             </TabItem>
             <TabItem Header="Register Agent Server">
-                
+                <views:RegisterAgentView/>
             </TabItem>
         </TabControl>
     </Grid>

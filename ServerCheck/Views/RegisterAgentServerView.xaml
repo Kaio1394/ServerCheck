@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="ServerCheck.Views.RegisterAgentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ServerCheck.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="HostService" Grid.Row="0" Grid.Column="0"/>
+        <TextBox x:Name="txtNome"
+             Margin="20,0,0,0"
+             VerticalContentAlignment="Center"
+             Grid.Row="0" Grid.Column="1"
+             Text="{Binding Host, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Label Content="Port" Grid.Row="0" Grid.Column="2"/>
+        <TextBox x:Name="txtPort"
+              Margin="20,0,0,0"
+              VerticalContentAlignment="Center"
+              Grid.Row="0" Grid.Column="3"
+              Text="{Binding Port, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Button x:Name="btnAdd" Content="Add" Grid.Row="0" Grid.Column="4" Command="{Binding AddCommand}"/>
+
+        <DataGrid ItemsSource="{Binding WebApiServers}" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="1" Margin="0,10,0,0" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Uuid" Width="*" Binding="{Binding Uuid}"/>
+                <DataGridTextColumn Header="Host" Width="*" Binding="{Binding Host}"/>
+                <DataGridTextColumn Header="Port" Width="2*" Binding="{Binding Port}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

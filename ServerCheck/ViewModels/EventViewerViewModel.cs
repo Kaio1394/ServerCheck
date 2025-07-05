@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServerCheck.ViewModels
 {
-    public class WebApiServersViewModel
+    public class EventViewerViewModel
     {
     }
 }

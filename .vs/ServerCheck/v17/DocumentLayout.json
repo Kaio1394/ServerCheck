@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\data\\servicecheckdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\data\\servicecheckdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\registeragentserverview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\registeragentserverview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\viewmodels\\registeragentserverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\viewmodels\\registeragentserverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\models\\webapiservers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\models\\webapiservers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\registeragentserverview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\registeragentserverview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\mainwindowview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\mainwindowview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\mainwindowview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\mainwindowview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\viewmodels\\eventviewerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\viewmodels\\eventviewerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\mainwindowview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\mainwindowview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +50,154 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterAgentServerView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\RegisterAgentServerView.xaml.cs",
+              "RelativeDocumentMoniker": "ServerCheck\\Views\\RegisterAgentServerView.xaml.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\RegisterAgentServerView.xaml.cs",
+              "RelativeToolTip": "ServerCheck\\Views\\RegisterAgentServerView.xaml.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T14:30:02.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindowView.xaml",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\MainWindowView.xaml",
+              "RelativeDocumentMoniker": "ServerCheck\\Views\\MainWindowView.xaml",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\MainWindowView.xaml",
+              "RelativeToolTip": "ServerCheck\\Views\\MainWindowView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-05T14:04:26.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\App.xaml",
+              "RelativeDocumentMoniker": "ServerCheck\\App.xaml",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\App.xaml",
+              "RelativeToolTip": "ServerCheck\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-05T14:03:59.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterAgentServerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\ViewModels\\RegisterAgentServerViewModel.cs",
+              "RelativeDocumentMoniker": "ServerCheck\\ViewModels\\RegisterAgentServerViewModel.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\ViewModels\\RegisterAgentServerViewModel.cs",
+              "RelativeToolTip": "ServerCheck\\ViewModels\\RegisterAgentServerViewModel.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T13:48:09.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WebApiServers.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\WebApiServers.cs",
+              "RelativeDocumentMoniker": "ServerCheck\\Models\\WebApiServers.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\WebApiServers.cs",
+              "RelativeToolTip": "ServerCheck\\Models\\WebApiServers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T13:38:57.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindowView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\MainWindowView.xaml.cs",
+              "RelativeDocumentMoniker": "ServerCheck\\Views\\MainWindowView.xaml.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\MainWindowView.xaml.cs",
+              "RelativeToolTip": "ServerCheck\\Views\\MainWindowView.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T13:13:48.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterAgentServerView.xaml",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\RegisterAgentServerView.xaml",
+              "RelativeDocumentMoniker": "ServerCheck\\Views\\RegisterAgentServerView.xaml",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\RegisterAgentServerView.xaml",
+              "RelativeToolTip": "ServerCheck\\Views\\RegisterAgentServerView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-05T14:10:02.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\App.xaml.cs",
+              "RelativeDocumentMoniker": "ServerCheck\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\App.xaml.cs",
+              "RelativeToolTip": "ServerCheck\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T14:03:57.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EventViewerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\ViewModels\\EventViewerViewModel.cs",
+              "RelativeDocumentMoniker": "ServerCheck\\ViewModels\\EventViewerViewModel.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\ViewModels\\EventViewerViewModel.cs",
+              "RelativeToolTip": "ServerCheck\\ViewModels\\EventViewerViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T14:01:46.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "996a00bf-07e7-48ae-a1b6-66591e34c8da",
+        "Display": 1,
+        "X": 100,
+        "Y": 241,
+        "Width": 800,
+        "Height": 600,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServiceCheckDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Data\\ServiceCheckDbContext.cs",
-              "RelativeDocumentMoniker": "ServerCheck\\Data\\ServiceCheckDbContext.cs",
-              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Data\\ServiceCheckDbContext.cs",
-              "RelativeToolTip": "ServerCheck\\Data\\ServiceCheckDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T04:08:36.329Z",
+              "DocumentIndex": 9,
+              "Title": "MainWindowView.xaml",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\MainWindowView.xaml",
+              "RelativeDocumentMoniker": "ServerCheck\\Views\\MainWindowView.xaml",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\MainWindowView.xaml",
+              "RelativeToolTip": "ServerCheck\\Views\\MainWindowView.xaml",
+              "ViewState": "AQIAADQAAAAAAAAAAAAiwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-05T13:17:38.798Z",
               "EditorCaption": ""
             }
           ]
