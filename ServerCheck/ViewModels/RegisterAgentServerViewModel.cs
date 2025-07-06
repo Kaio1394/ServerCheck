@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using ServerCheck.Helpers;
 using ServerCheck.Models;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,8 @@ using System.Threading.Tasks;
 namespace ServerCheck.ViewModels
 {
     public partial class RegisterAgentServerViewModel: ObservableObject
-    {
-        [ObservableProperty]
-        private ObservableCollection<WebApiServers> webApiServers;
+    {     
+        public ObservableCollection<WebApiServers> WebApiServers => SharedData.WebApiServers;
 
         [ObservableProperty]
         private string host;
@@ -24,22 +24,21 @@ namespace ServerCheck.ViewModels
 
         public RegisterAgentServerViewModel()
         {
-            WebApiServers = new ObservableCollection<WebApiServers>();
         }
 
         [RelayCommand]
         private void Add()
         {
-            if (!string.IsNullOrWhiteSpace(host))
+            if (!string.IsNullOrWhiteSpace(Host))
             {
-                WebApiServers.Add(new WebApiServers
+                SharedData.WebApiServers.Add(new WebApiServers
                 {
                     Uuid = Guid.NewGuid().ToString(),
-                    Host = host,
+                    Host = Host,
                     Port = Port
                 });
 
-                host = string.Empty;
+                Host = string.Empty;
                 Port = 0;
             }
         }

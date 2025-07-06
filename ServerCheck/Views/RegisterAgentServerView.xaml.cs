@@ -21,10 +21,12 @@ namespace ServerCheck.Views
     /// </summary>
     public partial class RegisterAgentView : UserControl
     {
+        public RegisterAgentServerViewModel ViewModel { get; }
         public RegisterAgentView()
         {
             InitializeComponent();
-            DataContext = new RegisterAgentServerViewModel();
+            ViewModel = new RegisterAgentServerViewModel();
+            DataContext = ViewModel;
         }
     }
 }
