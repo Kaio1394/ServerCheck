@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ServerCheck.Models;
+using ServerCheck.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,7 @@ namespace ServerCheck.Views
         public ServicesView()
         {
             InitializeComponent();
+            DataContext = new ServicesViewModel();
         }
     }
 }
