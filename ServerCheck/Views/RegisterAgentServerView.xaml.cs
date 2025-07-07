@@ -1,4 +1,7 @@
-﻿using ServerCheck.ViewModels;
+﻿using ServerCheck.Data;
+using ServerCheck.Repositories.Interfaces;
+using ServerCheck.Repositories;
+using ServerCheck.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.EntityFrameworkCore;
 
 namespace ServerCheck.Views
 {
@@ -21,12 +25,13 @@ namespace ServerCheck.Views
     /// </summary>
     public partial class RegisterAgentView : UserControl
     {
-        public RegisterAgentServerViewModel ViewModel { get; }
         public RegisterAgentView()
         {
             InitializeComponent();
-            ViewModel = new RegisterAgentServerViewModel();
-            DataContext = ViewModel;
+
+            IWebApiServersRepository repository = new WebApiServersRepository(new ServerCheckDbContext());
+
+            DataContext = new RegisterAgentServerViewModel(repository);
         }
     }
 }
