@@ -19,9 +19,14 @@ namespace ServerCheck.Helpers
 
             try
             {
-                var response = await client.GetStringAsync(url);
+                var response = await client.GetAsync(url);
 
-                var servicesList = JsonSerializer.Deserialize<List<Service>>(response);
+                var responseStr = await response.Content.ReadAsStringAsync();
+
+                if ((int)response.StatusCode != 200)
+                    throw new Exception($"[{(int)response.StatusCode}] - {responseStr}");
+
+                var servicesList = JsonSerializer.Deserialize<List<Service>>(responseStr);
 
                 return servicesList;
             }

@@ -29,22 +29,29 @@ namespace ServerCheck.ViewModels
         [RelayCommand]
         private async Task SearchAsync()
         {
-            if (SelectedServer == null)
+            try
             {
-                System.Windows.MessageBox.Show("Select at least one item in the combbox", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
+                if (SelectedServer == null)
+                {
+                    System.Windows.MessageBox.Show("Select at least one item in the combobox", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                string host = SelectedServer.Host;
+                int port = SelectedServer.Port;
+
+                List<Service> listServices = await ApiHelper.GetServicesAsync(host, port);
+
+                Services.Clear();
+
+                foreach (var service in listServices)
+                {
+                    Services.Add(service);
+                }
             }
-
-            string host = SelectedServer.Host;
-            int port = SelectedServer.Port;
-
-            List<Service> listServices = await ApiHelper.GetServicesAsync(host, port);
-
-            Services.Clear();
-
-            foreach (var service in listServices)
+            catch (Exception ex)
             {
-                Services.Add(service);
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
