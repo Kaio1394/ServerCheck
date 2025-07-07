@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Documents;
 
 namespace ServerCheck.ViewModels
 {
@@ -28,6 +29,18 @@ namespace ServerCheck.ViewModels
         public RegisterAgentServerViewModel(IWebApiServersRepository webApiServersRepository)
         {
             _webApiServersRepository = webApiServersRepository;
+            LoadlistDataBase();
+           
+        }
+
+        private async Task LoadlistDataBase()
+        {
+            var listDb = await _webApiServersRepository.GetAllWebApiServers();
+            SharedData.WebApiServers.Clear();
+            foreach (var item in listDb)
+            {
+                SharedData.WebApiServers.Add(item);
+            }
         }
 
         [RelayCommand]
@@ -55,23 +68,5 @@ namespace ServerCheck.ViewModels
                 }
             }
         }
-
-        //[RelayCommand]
-        //private void Add()
-        //{
-        //    if (!string.IsNullOrWhiteSpace(Host))
-        //    {
-        //        SharedData.WebApiServers.Add(new WebApiServers
-        //        {
-        //            Uuid = Guid.NewGuid().ToString(),
-        //            Host = Host,
-        //            Port = Port
-        //        });
-
-        //        Host = string.Empty;
-        //        Port = 0;
-        //    }
-        //}
-
     }
 }

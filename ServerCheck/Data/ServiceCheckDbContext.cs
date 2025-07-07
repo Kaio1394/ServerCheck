@@ -2,6 +2,7 @@
 using ServerCheck.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace ServerCheck.Data
     public class ServerCheckDbContext: DbContext
     {
         public ServerCheckDbContext() : base(new DbContextOptionsBuilder<ServerCheckDbContext>()
-                .UseSqlite("Data Source=ServerCheck.db")
+                .UseSqlite($"Data Source={Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ServerCheck.db")}")
                 .Options)
         {
         }
