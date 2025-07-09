@@ -35,5 +35,27 @@ namespace ServerCheck.Helpers
                 throw;
             }
         }
+        public static async Task<string> StartStopService(int action, string serviceName, string host, int port)
+        {
+            using HttpClient client = new HttpClient();
+
+            string url = $"https://{host}:{port}/ServicesWindows/{(action == 0 ? "start" : "stop")}?serviceName={Uri.EscapeDataString(serviceName)}";
+
+            try
+            {
+                var response = await client.PostAsync(url, new StringContent(""));
+
+                var responseStr = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"[{(int)response.StatusCode}] - {responseStr}");
+                return responseStr; 
+            }
+            catch (HttpRequestException ex)
+            {
+                throw;
+            }
+        }
+
     }
 }

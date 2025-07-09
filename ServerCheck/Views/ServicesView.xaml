@@ -10,6 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -39,15 +40,23 @@
 
         <DataGrid Grid.Row="1"
                   Grid.Column="0"
-                  x:Name="dgServices"
                   AutoGenerateColumns="False"
                   IsReadOnly="True"
-                  ItemsSource="{Binding Services}">
+                  ItemsSource="{Binding Services}"
+                  SelectedItem="{Binding SelectedService, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Service Name" Width="*" Binding="{Binding ServiceName}"/>
-                <DataGridTextColumn Header="Display Name" Width="2*" Binding="{Binding DisplayName}"/>
-                <DataGridTextColumn Header="Status" Width="*" Binding="{Binding Status}"/>
+                <DataGridTextColumn Header="Service Name" Width="*" Binding="{Binding ServiceName}" />
+                <DataGridTextColumn Header="Display Name" Width="2*" Binding="{Binding DisplayName}" />
+                <DataGridTextColumn Header="Status" Width="*" Binding="{Binding Status}" />
             </DataGrid.Columns>
         </DataGrid>
+
+        <Grid Grid.Row="2" Grid.Column="0" Margin="0,10,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Content="Start" Width="100" Margin="0,0,10,0" Command="{Binding StartServiceCommand}"/>
+                <Button Content="Stop" Width="100" Command="{Binding StopServiceCommand}"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>

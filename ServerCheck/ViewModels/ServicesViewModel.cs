@@ -5,10 +5,6 @@ using ServerCheck.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -22,8 +18,43 @@ namespace ServerCheck.ViewModels
         [ObservableProperty]
         private WebApiServers? selectedServer;
 
+        [ObservableProperty]
+        private Service? selectedService; 
+
         public ServicesViewModel()
         {
+        }
+
+        [RelayCommand]
+        private async Task StartService()
+        {
+            if (SelectedService == null)
+            {
+                MessageBox.Show("No service selected");
+                return;
+            }
+
+            string host = SelectedServer.Host;
+            int port = SelectedServer.Port;
+
+            string response = await ApiHelper.StartStopService(0, SelectedService.ServiceName, host, port);
+            MessageBox.Show($"Response: {response}");
+        }
+
+        [RelayCommand]
+        private async Task StopService()
+        {
+            if (SelectedService == null)
+            {
+                MessageBox.Show("No service selected");
+                return;
+            }
+
+            string host = SelectedServer.Host;
+            int port = SelectedServer.Port;
+
+            string response = await ApiHelper.StartStopService(1, SelectedService.ServiceName, host, port);
+            MessageBox.Show($"Response: {response}");
         }
 
         [RelayCommand]
@@ -33,7 +64,7 @@ namespace ServerCheck.ViewModels
             {
                 if (SelectedServer == null)
                 {
-                    System.Windows.MessageBox.Show("Select at least one item in the combobox", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Selecione um servidor", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
