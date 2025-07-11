@@ -46,6 +46,9 @@
                   SelectedItem="{Binding SelectedService, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
 
             <DataGrid.Columns>
+                <!--<DataGridCheckBoxColumn Header="✓"
+                        Width="40"
+                        Binding="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />-->
                 <DataGridTextColumn Header="Service Name" Width="*" Binding="{Binding ServiceName}" />
                 <DataGridTextColumn Header="Display Name" Width="2*" Binding="{Binding DisplayName}" />
                 <DataGridTextColumn Header="Status" Width="*" Binding="{Binding Status}" />
