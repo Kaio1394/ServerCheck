@@ -14,6 +14,9 @@
     <Compile Update="Views\StartStopView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\EditWebApiServerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\RegisterAgentServerView.xaml">
@@ -26,6 +29,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\StartStopView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\EditWebApiServerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

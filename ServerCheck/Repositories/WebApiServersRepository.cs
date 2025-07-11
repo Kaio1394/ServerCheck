@@ -30,6 +30,12 @@ namespace ServerCheck.Repositories
             return listWebApiServers;
         }
 
+        public async Task<WebApiServers> GetWebApiServerByHost(string host)
+        {
+            WebApiServers? webApiServer = await _context.WebApiServers.FirstOrDefaultAsync(x => x.Host == host);
+            return webApiServer;
+        }
+
         public async Task<WebApiServers> GetWebApiServerByUuid(string uuid)
         {
             WebApiServers? webApiServer = await _context.WebApiServers.FirstOrDefaultAsync(x => x.Uuid == uuid);

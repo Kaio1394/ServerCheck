@@ -11,6 +11,7 @@ namespace ServerCheck.Repositories.Interfaces
     {
         Task<IEnumerable<WebApiServers>> GetAllWebApiServers();
         Task<WebApiServers> GetWebApiServerByUuid(string uuid);
+        Task<WebApiServers> GetWebApiServerByHost(string host);
         Task AddWebApiServer(WebApiServers webApiServers);
     }
 }

@@ -17,14 +17,11 @@
             <TabItem Header="Services">
                 <views:ServicesView/>
             </TabItem>
-            <TabItem Header="Start/Stop">
-                <views:StartStopView/>
+            <TabItem Header="Execute Script">
+                <views:ScriptView/>
             </TabItem>
             <TabItem Header="Event Viewer">
 
-            </TabItem>
-            <TabItem Header="Execute Script">
-                <views:ScriptView/>
             </TabItem>
             <TabItem Header="Register Agent Server">
                 <views:RegisterAgentView/>

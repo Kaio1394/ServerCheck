@@ -19,7 +19,10 @@ namespace ServerCheck.ViewModels
         private WebApiServers? selectedServer;
 
         [ObservableProperty]
-        private Service? selectedService; 
+        private Service? selectedService;
+
+        [ObservableProperty]
+        private bool isSelected;
 
         public ServicesViewModel()
         {
@@ -37,8 +40,16 @@ namespace ServerCheck.ViewModels
             string host = SelectedServer.Host;
             int port = SelectedServer.Port;
 
-            string response = await ApiHelper.StartStopService(0, SelectedService.ServiceName, host, port);
-            MessageBox.Show($"Response: {response}");
+            try
+            {
+                string response = await ApiHelper.StartStopService(0, SelectedService.ServiceName, host, port);
+                MessageBox.Show($"Response: {response}");
+                await SearchAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         [RelayCommand]
@@ -53,8 +64,16 @@ namespace ServerCheck.ViewModels
             string host = SelectedServer.Host;
             int port = SelectedServer.Port;
 
-            string response = await ApiHelper.StartStopService(1, SelectedService.ServiceName, host, port);
-            MessageBox.Show($"Response: {response}");
+            try
+            {
+                string response = await ApiHelper.StartStopService(1, SelectedService.ServiceName, host, port);
+                MessageBox.Show($"Response: {response}");
+                await SearchAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         [RelayCommand]
