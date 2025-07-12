@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServerCheck.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace ServerCheck.Views
         public ScriptView()
         {
             InitializeComponent();
+            DataContext = new ScriptViewModel();
         }
     }
 }
