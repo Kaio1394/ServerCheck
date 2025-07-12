@@ -1,21 +1,26 @@
 ﻿using ServerCheck.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Json;
+using System.Security.Policy;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ServerCheck.Helpers
 {
+    [ExcludeFromCodeCoverage]
     public static class ApiHelper
     {
         public static async Task<List<Service>> GetServicesAsync(string host, int port)
         {
             using HttpClient client = new HttpClient();
 
-            string url = $"https://{host}:{port}/ServicesWindows/services";
+            string url = $"https://{host}:{port}/api/ServicesWindows/services";
 
             try
             {
@@ -39,7 +44,7 @@ namespace ServerCheck.Helpers
         {
             using HttpClient client = new HttpClient();
 
-            string url = $"https://{host}:{port}/ServicesWindows/{(action == 0 ? "start" : "stop")}?serviceName={Uri.EscapeDataString(serviceName)}";
+            string url = $"https://{host}:{port}/api/ServicesWindows/{(action == 0 ? "start" : "stop")}?serviceName={Uri.EscapeDataString(serviceName)}";
 
             try
             {
@@ -56,6 +61,51 @@ namespace ServerCheck.Helpers
                 throw;
             }
         }
+        public static async Task<IEnumerable<Process>> GetListProcess(string host, int port)
+        {
+            using HttpClient client = new HttpClient();
+            var url = $"https://{host}:{port}/api/Process/list";
+            List<Process> listProcess = new List<Process>();
 
+            try
+            {
+                var response = await client.GetAsync(url);
+
+                var responseStr = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"[{(int)response.StatusCode}] - {responseStr}");
+
+                var processes = JsonSerializer.Deserialize<List<Models.Process>>(responseStr);
+                return processes;
+            }
+            catch (HttpRequestException)
+            {
+                throw;
+            }
+        }
+
+        public static async Task<string> KillProcess(string host, int port, int pid)
+        {
+            using HttpClient client = new HttpClient();
+            var url = $"https://{host}:{port}/api/Process/list?pid={pid}";
+            List<Process> listProcess = new List<Process>();
+
+            try
+            {
+                var response = await client.PostAsync(url, new StringContent(""));
+
+                var responseStr = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"[{(int)response.StatusCode}] - {responseStr}");
+
+                return responseStr;
+            }
+            catch (HttpRequestException)
+            {
+                throw;
+            }
+        }
     }
 }

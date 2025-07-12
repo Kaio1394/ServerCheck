@@ -83,7 +83,7 @@ namespace ServerCheck.ViewModels
             {
                 if (SelectedServer == null)
                 {
-                    MessageBox.Show("Selecione um servidor", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Select one server", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 

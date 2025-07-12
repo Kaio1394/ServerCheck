@@ -17,6 +17,9 @@
             <TabItem Header="Services">
                 <views:ServicesView/>
             </TabItem>
+            <TabItem Header="Process">
+                <views:ProcessView/>
+            </TabItem>
             <TabItem Header="Execute Script">
                 <views:ScriptView/>
             </TabItem>
