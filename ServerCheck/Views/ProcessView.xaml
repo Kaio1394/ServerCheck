@@ -29,7 +29,7 @@
             </GroupBox>
 
             <Button Content="Search"
-                x:Name="btSeachServer"
+                x:Name="btSeachProcess"
                 Grid.Column="1"
                 Width="100"
                 Height="30"
