@@ -29,6 +29,9 @@
             <TabItem Header="Register Agent Server">
                 <views:RegisterAgentView/>
             </TabItem>
+            <TabItem Header="Report">
+                
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

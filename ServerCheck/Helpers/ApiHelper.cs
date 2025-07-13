@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Security.Cryptography;
 using System.Security.Policy;
 using System.Text;
 using System.Text.Json;
@@ -94,6 +96,29 @@ namespace ServerCheck.Helpers
             try
             {
                 var response = await client.PostAsync(url, new StringContent(""));
+
+                var responseStr = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"[{(int)response.StatusCode}] - {responseStr}");
+
+                return responseStr;
+            }
+            catch (HttpRequestException)
+            {
+                throw;
+            }
+        }
+        public static async Task<string> ExecuteScriptPython(string host, int port, string script)
+        {
+            using HttpClient client = new HttpClient();
+            var url = $"https://{host}:{port}/api/Scripts/cmd/run";
+
+            try
+            {
+                var content = new StringContent(script, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync(url, content);
 
                 var responseStr = await response.Content.ReadAsStringAsync();
 
