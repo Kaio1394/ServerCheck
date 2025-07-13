@@ -21,10 +21,19 @@ namespace ServerCheck.Views
     /// </summary>
     public partial class ScriptView : UserControl
     {
+        private readonly ScriptViewModel _viewModel;
+
         public ScriptView()
         {
             InitializeComponent();
-            DataContext = new ScriptViewModel();
+            _viewModel = new ScriptViewModel();
+            DataContext = _viewModel;
+        }
+
+        private void ExecuteButton_Click(object sender, RoutedEventArgs e)
+        {
+            var rawScript = CodeEditor.Text;
+            _viewModel.ExecuteScriptCommand.Execute(rawScript);
         }
     }
 }

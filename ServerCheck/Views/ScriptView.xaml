@@ -4,9 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ServerCheck.Views"
+             xmlns:viewmodels="clr-namespace:ServerCheck.ViewModels"
              xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    
+    <UserControl.DataContext>
+        <viewmodels:ScriptViewModel />
+    </UserControl.DataContext>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -40,10 +46,11 @@
                 VerticalAlignment="Center"
                 HorizontalAlignment="Right"
                 Margin="0,5,10,5"
-                Command="{Binding ExecuteCommand}"/>
+                Click="ExecuteButton_Click"/>
         </Grid>
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -53,10 +60,10 @@
 
 
             <Border Grid.Row="0"
-            Grid.Column="0"
-            BorderThickness="2"
-            BorderBrush="SteelBlue"
-            CornerRadius="4">
+                Grid.Column="0"
+                BorderThickness="2"
+                BorderBrush="SteelBlue"
+                CornerRadius="4">
                 <avalonedit:TextEditor x:Name="CodeEditor"
                                ShowLineNumbers="True"
                                FontFamily="Consolas"
@@ -64,6 +71,22 @@
                                SyntaxHighlighting="Python"
                                Margin="5"/>
             </Border>
+
+            <TextBox Text="{Binding ScriptOutput, Mode=OneWay}"
+                 FontFamily="Consolas"
+                 FontSize="14"
+                 Foreground="LightGray"
+                 Background="Black"
+                 IsReadOnly="True"
+                 VerticalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 Margin="5"
+                 BorderBrush="Gray"
+                 BorderThickness="1"
+                 Padding="5"
+                 Grid.Row="1"
+                 Grid.Column="0"/>
         </Grid>
     </Grid>
 </UserControl>
