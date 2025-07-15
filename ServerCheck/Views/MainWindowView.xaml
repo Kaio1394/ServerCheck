@@ -24,7 +24,7 @@
                 <views:ScriptView/>
             </TabItem>
             <TabItem Header="Event Viewer">
-
+                <views:EventViewerView/>
             </TabItem>
             <TabItem Header="Register Agent Server">
                 <views:RegisterAgentView/>

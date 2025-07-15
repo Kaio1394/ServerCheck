@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="ServerCheck.Views.EventViewerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ServerCheck.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Grid.Row="0" Grid.Column="0" Header="Filters" Margin="0,0,10,0" VerticalAlignment="Center">
+                <WrapPanel Margin="5">
+                    <ComboBox x:Name="cbFilters" Height="20" Width="100" Margin="5"
+                          DisplayMemberPath="Host"
+                          ItemsSource="{Binding WebApiServers}"
+                          SelectedItem="{Binding SelectedServer, Mode=TwoWay}" />
+
+                    <ComboBox x:Name="cbEntryType" Height="20" Width="100" Margin="5" 
+                              SelectedValue="{Binding SelectedEntryType, Mode=TwoWay}"
+                              SelectedValuePath="Content">
+                        <ComboBoxItem Content="System"/>
+                        <ComboBoxItem Content="Application"/>
+                        <ComboBoxItem Content="Security"/>
+                    </ComboBox>
+
+                    <ComboBox x:Name="cbLogName" Height="20" Width="100" Margin="5" 
+                          SelectedValue="{Binding SelectedLogName, Mode=TwoWay}"
+                          SelectedValuePath="Content">          
+                        <ComboBoxItem Content="Information"/>
+                        <ComboBoxItem Content="Warning"/>
+                        <ComboBoxItem Content="Error"/>
+                    </ComboBox>
+
+                    <DatePicker x:Name="dpData" Width="200" Height="25" Margin="5"
+                        SelectedDate="{Binding SelectedDate, Mode=TwoWay}" />
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+                        <TextBlock Text="Limit Messages" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                        <TextBox x:Name="txtLimitMessages" Width="100" Height="20"
+                             VerticalAlignment="Center"
+                             Text="{Binding LimitMessages, Mode=TwoWay}" />
+                    </StackPanel>
+                </WrapPanel>
+            </GroupBox>
+
+            <Button Content="Search"
+                x:Name="btSeachProcess"
+                Grid.Column="1"
+                Width="100"
+                Height="30"
+                VerticalAlignment="Center"
+                Margin="0,5,0,5"
+                Command="{Binding SearchCommand}"/>
+        </Grid>
+        <DataGrid x:Name="dgEventViewer"
+                  Grid.Row="1"
+                  Grid.Column="0"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding ListEventViewer}">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Entry Type" Width="*" Binding="{Binding EntryType}" />
+                <DataGridTextColumn Header="Message" Width="*" Binding="{Binding Message}" />
+                <DataGridTextColumn Header="Source" Width="*" Binding="{Binding Source}" />
+                <DataGridTextColumn Header="TimeGenerated" Width="*" Binding="{Binding TimeGenerated}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

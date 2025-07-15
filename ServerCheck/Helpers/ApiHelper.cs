@@ -132,5 +132,29 @@ namespace ServerCheck.Helpers
                 throw;
             }
         }
+
+        public static async Task<IEnumerable<EventView>> GetListEventViewer(string host, int port, string entryType, string logName, string date, int limitMessage)
+        {
+            using HttpClient client = new HttpClient();
+            var url = $"https://{host}:{port}/api/EventViewer/list?entryType={entryType}&logName={logName}&date={date}&limit={limitMessage}";
+
+            try
+            {
+                var response = await client.GetAsync(url);
+
+                var responseStr = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"[{(int)response.StatusCode}] - {responseStr}");
+
+                var listEventViewer = JsonSerializer.Deserialize<List<Models.EventView>>(responseStr);
+
+                return listEventViewer;
+            }
+            catch (HttpRequestException)
+            {
+                throw;
+            }
+        }
     }
 }
