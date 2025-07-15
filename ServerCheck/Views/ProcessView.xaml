@@ -46,9 +46,9 @@
               SelectedItem="{Binding SelectedProcess, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Pid" Width="2*" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Pid" Width="*" Binding="{Binding Id}" />
                 <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}" />
-                <DataGridTextColumn Header="Ussage Memory" Width="*" Binding="{Binding UsageMemory}" />
+                <DataGridTextColumn Header="Usage Memory" Width="*" Binding="{Binding UsageMemory}" />
             </DataGrid.Columns>
         </DataGrid>
 
