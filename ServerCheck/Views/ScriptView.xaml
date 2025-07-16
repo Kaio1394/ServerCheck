@@ -8,7 +8,7 @@
              xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
     <UserControl.DataContext>
         <viewmodels:ScriptViewModel />
     </UserControl.DataContext>
@@ -24,30 +24,64 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="0" Margin="0,0,0,10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
+            <GroupBox Header="Servers" VerticalAlignment="Center" Margin="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-            <GroupBox Header="Servers" Grid.Column="0" Margin="0,0,10,0" VerticalAlignment="Center">
-                <ComboBox x:Name="cbServers" Width="200" 
-                          Margin="5" 
-                          DisplayMemberPath="Host" 
-                          ItemsSource="{Binding WebApiServers}"
-                          SelectedItem="{Binding SelectedServer, Mode=TwoWay}">
-                </ComboBox>
+                    <ComboBox x:Name="cbServers"
+                              Width="200"
+                              Margin="5,0,10,0"
+                              DisplayMemberPath="Host"
+                              ItemsSource="{Binding WebApiServers}"
+                              SelectedItem="{Binding SelectedServer, Mode=TwoWay}"
+                              VerticalAlignment="Center"
+                              Grid.Column="0"/>
+
+                    <Button Content="Execute"
+                            x:Name="btExecute"
+                            Width="80"
+                            Height="30"
+                            Margin="0,0,10,0"
+                            VerticalAlignment="Center"
+                            Grid.Column="1"
+                            Click="ExecuteButton_Click"/>
+
+                    <Button Content="Clear"
+                         x:Name="btClear"
+                         Width="80"
+                         Height="30"
+                         Margin="0,0,10,0"
+                         VerticalAlignment="Center"
+                         Grid.Column="2"
+                         Click="ClearButton_Click"/>
+
+                    <Button Width="30"
+                        Height="30"
+                        ToolTip="Import File"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        BorderBrush="Transparent"
+                        Padding="0"
+                        Cursor="Hand"
+                        VerticalAlignment="Center"
+                        Grid.Column="3"
+                        Click="ImportFileButton_Click">
+                        <Image Source="pack://application:,,,/Resource/arrow_import.ico"
+                               Width="30"
+                               Height="50"
+                               Stretch="Uniform"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>   
+                    </Button>
+                </Grid>
             </GroupBox>
-
-            <Button Content="Execute"
-                x:Name="btExecute"
-                Grid.Column="1"
-                Width="100"
-                Height="30"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Right"
-                Margin="0,5,10,5"
-                Click="ExecuteButton_Click"/>
         </Grid>
+
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
@@ -57,36 +91,34 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-
-
             <Border Grid.Row="0"
-                Grid.Column="0"
-                BorderThickness="2"
-                BorderBrush="SteelBlue"
-                CornerRadius="4">
+                    Grid.Column="0"
+                    BorderThickness="2"
+                    BorderBrush="SteelBlue"
+                    CornerRadius="4">
                 <avalonedit:TextEditor x:Name="CodeEditor"
-                               ShowLineNumbers="True"
-                               FontFamily="Consolas"
-                               FontSize="14"
-                               SyntaxHighlighting="Python"
-                               Margin="5"/>
+                                       ShowLineNumbers="True"
+                                       FontFamily="Consolas"
+                                       FontSize="14"
+                                       SyntaxHighlighting="Python"
+                                       Margin="5"/>
             </Border>
 
             <TextBox Text="{Binding ScriptOutput, Mode=OneWay}"
-                 FontFamily="Consolas"
-                 FontSize="14"
-                 Foreground="LightGray"
-                 Background="Black"
-                 IsReadOnly="True"
-                 VerticalScrollBarVisibility="Auto"
-                 TextWrapping="Wrap"
-                 AcceptsReturn="True"
-                 Margin="5"
-                 BorderBrush="Gray"
-                 BorderThickness="1"
-                 Padding="5"
-                 Grid.Row="1"
-                 Grid.Column="0"/>
+                     FontFamily="Consolas"
+                     FontSize="14"
+                     Foreground="LightGray"
+                     Background="Black"
+                     IsReadOnly="True"
+                     VerticalScrollBarVisibility="Auto"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     Margin="5"
+                     BorderBrush="Gray"
+                     BorderThickness="1"
+                     Padding="5"
+                     Grid.Row="1"
+                     Grid.Column="0"/>
         </Grid>
     </Grid>
 </UserControl>

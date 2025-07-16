@@ -1,11 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Win32;
 using ServerCheck.Helpers;
 using ServerCheck.Models;
 using ServerCheck.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -54,5 +56,24 @@ namespace ServerCheck.ViewModels
             ScriptOutput = $"Executable: {responseModel?.PathExecutable}\n"
                 + $"Output: {responseModel?.Output}";
         }
+
+        //[RelayCommand]
+        //private void ImportFile()
+        //{
+        //    var dialog = new OpenFileDialog
+        //    {
+        //        Title = "Select a scrypt python.",
+        //        Filter = "Arquivos de texto (*.txt)|*.txt|Python (*.py)|*.py|Todos os arquivos (*.*)|*.*",
+        //        Multiselect = false
+        //    };
+
+        //    if (dialog.ShowDialog() == true)
+        //    {
+        //        string filePath = dialog.FileName;
+        //        string content = File.ReadAllText(filePath);
+
+        //        Code = content; 
+        //    }
+        //}
     }
 }

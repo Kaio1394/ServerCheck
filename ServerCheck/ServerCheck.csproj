@@ -9,11 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resource\arrow_import.ico" />
     <None Remove="Resource\check.ico" />
+    <None Remove="Resource\import_file.ico" />
+    <None Remove="Resource\import_icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resource\arrow_import.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resource\check.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\import_file.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\import_icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
