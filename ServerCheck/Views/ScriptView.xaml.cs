@@ -1,7 +1,10 @@
-﻿using ServerCheck.ViewModels;
+﻿using Microsoft.Win32;
+using ServerCheck.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -34,6 +37,27 @@ namespace ServerCheck.Views
         {
             var rawScript = CodeEditor.Text;
             _viewModel.ExecuteScriptCommand.Execute(rawScript);
+        }
+
+        private void ImportFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new OpenFileDialog
+            {
+                Title = "Select a scrypt python.",
+                Filter = "Arquivos de texto (*.txt)|*.txt|Python (*.py)|*.py|Todos os arquivos (*.*)|*.*",
+                Multiselect = false
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                string filePath = dialog.FileName;
+                string content = File.ReadAllText(filePath);
+                CodeEditor.Text = content;  
+            }
+        }
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            CodeEditor.Text = "";
         }
     }
 }
