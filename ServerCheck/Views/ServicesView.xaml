@@ -22,7 +22,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <GroupBox Header="Servers" Grid.Column="0" Margin="0,0,10,0" VerticalAlignment="Center">
+            <GroupBox Header="Host Agent" Grid.Column="0" Margin="0,0,10,0" VerticalAlignment="Center">
                 <ComboBox x:Name="cbServers" Width="200" Margin="5" DisplayMemberPath="Host" ItemsSource="{Binding WebApiServers}"
                     SelectedItem="{Binding SelectedServer, Mode=TwoWay}">
                 </ComboBox>
