@@ -24,7 +24,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="0" Margin="0,0,0,10">
-            <GroupBox Header="Servers" VerticalAlignment="Center" Margin="0">
+            <GroupBox Header="Host Agent" VerticalAlignment="Center" Margin="0">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>

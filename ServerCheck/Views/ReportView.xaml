@@ -1,0 +1,118 @@
+﻿<UserControl x:Class="ServerCheck.Views.ReportView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ServerCheck.Views"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Host Agent">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <ComboBox x:Name="cbServers"
+                      Width="200"
+                      Margin="5,0,10,0"
+                      DisplayMemberPath="Host"
+                      ItemsSource="{Binding WebApiServers}"
+                      SelectedItem="{Binding SelectedServer, Mode=TwoWay}"
+                      Grid.Row="0"
+                      Grid.Column="0"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Add" Grid.Row="1">
+            <StackPanel Margin="10">
+                <CheckBox x:Name="ckbEventViewer" Content="Event Viewer" Margin="5"/>
+                <CheckBox x:Name="ckbMemory" Content="Memory" Margin="5"/>
+                <CheckBox x:Name="ckbDisk" Content="Disk" Margin="5"/>
+                <CheckBox x:Name="ckbCpu" Content="CPU" Margin="5"/>
+                <CheckBox x:Name="ckbProcess" Content="Process" Margin="5"/>
+                <CheckBox x:Name="ckbService"  Content="Services" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Extension" Grid.Row="2">
+            <StackPanel Margin="5" HorizontalAlignment="Center">
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <RadioButton Content="xlsx" Margin="0,0,15,0"/>
+                    <RadioButton Content="CSV" Margin="0,0,15,0"/>
+                    <RadioButton Content="PDF" Margin="0,0,15,0"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Grid.Row="3" Header="Monitoring Period">
+            <StackPanel Orientation="Vertical" Margin="10">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Seconds"
+                         VerticalAlignment="Center"
+                         Margin="0,0,15,0"/>
+                    <xctk:IntegerUpDown                    
+                        Width="100" 
+                        Minimum="0" 
+                        Maximum="100" 
+                        Value="10"
+                        Increment="1"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                    <TextBlock Text="Interval"
+                         VerticalAlignment="Center"
+                         Margin="0,0,15,0"/>
+                    <xctk:IntegerUpDown                    
+                        Width="100" 
+                        Minimum="0" 
+                        Maximum="100" 
+                        Value="10"
+                        Increment="1" Margin="5,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Directory Output" Grid.Row="4">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock Text="Path"
+                     VerticalAlignment="Center"
+                     Margin="0,0,15,0"/>
+                <TextBox HorizontalAlignment="Stretch" MinWidth="200"/>
+                <Button Content="Search"/>
+            </StackPanel>
+        </GroupBox>
+        
+        <Button Content="Start" 
+                Grid.Row="5"
+                Grid.Column="1"
+                Width="100"
+                Margin="10,20,10,0" HorizontalAlignment="Right"/>
+
+        <TextBox Text="{Binding LogOutput, Mode=OneWay}"
+                 FontFamily="Consolas"
+                 FontSize="14"
+                 Foreground="LightGray"
+                 Background="Black"
+                 IsReadOnly="True"
+                 VerticalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 Margin="15,5,5,5"
+                 BorderBrush="Gray"
+                 BorderThickness="1"
+                 Padding="2"
+                 Grid.RowSpan="5"
+                 Grid.Column="1"/>
+    </Grid>
+</UserControl>

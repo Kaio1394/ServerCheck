@@ -11,13 +11,13 @@
     <Compile Update="Views\RegisterAgentServerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ScriptView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\ServicesView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\StartStopView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\EditWebApiServerWindow.xaml.cs">
@@ -34,13 +34,13 @@
     <Page Update="Views\RegisterAgentServerView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\ReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\ScriptView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ServicesView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\StartStopView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\EditWebApiServerWindow.xaml">
