@@ -12,9 +12,11 @@ namespace ServerCheck.Helpers
     class ReportDocument : IDocument
     {
         private string _text;
-        public ReportDocument(string text)
+        private string _header;
+        public ReportDocument(string text, string header)
         {
             _text = text;
+            _header = header;
         }
         public void Compose(IDocumentContainer container)
         {
@@ -28,7 +30,7 @@ namespace ServerCheck.Helpers
                 page.Content()
                     .Column(column =>
                     {
-                        column.Item().Text("Meu PDF Report").Bold().FontSize(20);
+                        column.Item().PaddingBottom(20).Text(_header).Bold().FontSize(20);
                         column.Item().Text(_text);
                     });
             });
