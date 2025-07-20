@@ -26,5 +26,6 @@ namespace ServerCheck.Views
             InitializeComponent();
             DataContext = new ReportViewModel();
         }
+        
     }
 }
