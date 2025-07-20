@@ -77,16 +77,22 @@ namespace ServerCheck.ViewModels
                 LogOutput = "";
                 var response = await ApiHelper.GenerateReport(SelectedServer.Host, SelectedServer.Port);
 
-                string jsonIndented = JsonSerializer.Serialize(
-                    JsonSerializer.Deserialize<object>(response),
-                    new JsonSerializerOptions { WriteIndented = true }
-                );
+                var date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-                LogOutput = jsonIndented;
+                var result = JsonSerializer.Deserialize<Report>(response);
 
-                var reportPdf = new ReportDocument(jsonIndented);
+                var output = $"""
+                    {date}
+                    {result.Cpu}
+                    {result.Memory}
+                    {string.Join("\n", result.ListDisk.Select(x => x.ToString()))}
+                """;
+
+                LogOutput = output;
+
+                var reportPdf = new ReportDocument(output, $"Server: {SelectedServer.Host}. Port: {SelectedServer.Port}");
                 QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
-                reportPdf.GeneratePdf(Path.Combine(TextFolder, "Report.pdf"));
+                reportPdf.GeneratePdf(Path.Combine(TextFolder, $"Report_{DateTime.Now.ToString("yyyy-MM-dd_HHmmss")}.pdf"));
             }
             catch (Exception ex)
             {
