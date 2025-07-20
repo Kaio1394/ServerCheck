@@ -109,6 +109,29 @@ namespace ServerCheck.Helpers
                 throw;
             }
         }
+
+        public static async Task<string> GenerateReport(string host, int port)
+        {
+            using HttpClient client = new HttpClient();
+            var url = $"https://{host}:{port}/api/Report/generate";
+            List<Process> listProcess = new List<Process>();
+
+            try
+            {
+                var response = await client.PostAsync(url, new StringContent(""));
+
+                var responseStr = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"[{(int)response.StatusCode}] - {responseStr}");
+
+                return responseStr;
+            }
+            catch (HttpRequestException)
+            {
+                throw;
+            }
+        }
         public static async Task<string> ExecuteScriptPython(string host, int port, string script)
         {
             using HttpClient client = new HttpClient();
