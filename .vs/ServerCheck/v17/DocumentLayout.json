@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\viewmodels\\reportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\reportview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\reportview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\reportview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\reportview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\helpers\\reportdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\helpers\\reportdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\processview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\processview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\models\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\helpers\\reportdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\helpers\\reportdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\models\\process.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\models\\process.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\models\\script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\models\\script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\reportview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\reportview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\viewmodels\\scriptviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,16 +67,8 @@
       "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\viewmodels\\proccessviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\reportview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\reportview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\scriptview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\scriptview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\processview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|solutionrelative:servercheck\\views\\processview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35D65C53-23F1-41D0-8E99-2E6A23402E25}|ServerCheck\\ServerCheck.csproj|c:\\users\\kaios\\source\\repos\\servercheck\\servercheck\\views\\processview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,22 +114,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegisterAgentServerView.xaml",
-              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\RegisterAgentServerView.xaml",
-              "RelativeDocumentMoniker": "ServerCheck\\Views\\RegisterAgentServerView.xaml",
-              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\RegisterAgentServerView.xaml",
-              "RelativeToolTip": "ServerCheck\\Views\\RegisterAgentServerView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-17T04:33:40.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ScriptView.xaml",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ScriptView.xaml",
               "RelativeDocumentMoniker": "ServerCheck\\Views\\ScriptView.xaml",
@@ -140,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ProccessViewModel.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\ViewModels\\ProccessViewModel.cs",
               "RelativeDocumentMoniker": "ServerCheck\\ViewModels\\ProccessViewModel.cs",
@@ -158,14 +147,14 @@
               "RelativeDocumentMoniker": "ServerCheck\\ViewModels\\ReportViewModel.cs",
               "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\ViewModels\\ReportViewModel.cs",
               "RelativeToolTip": "ServerCheck\\ViewModels\\ReportViewModel.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAA4wFgAAAAUAAAA",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAwwKMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T03:33:01.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Memory.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\Memory.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Models\\Memory.cs",
@@ -173,12 +162,11 @@
               "RelativeToolTip": "ServerCheck\\Models\\Memory.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAkwBEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T22:28:41.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T22:28:41.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Cpu.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\Cpu.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Models\\Cpu.cs",
@@ -186,12 +174,11 @@
               "RelativeToolTip": "ServerCheck\\Models\\Cpu.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAIwB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T22:29:20.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T22:29:20.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Process.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\Process.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Models\\Process.cs",
@@ -199,12 +186,11 @@
               "RelativeToolTip": "ServerCheck\\Models\\Process.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T03:44:17.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T03:44:17.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\Service.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Models\\Service.cs",
@@ -212,12 +198,11 @@
               "RelativeToolTip": "ServerCheck\\Models\\Service.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T22:45:25.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T22:45:25.808Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "DIsk.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\DIsk.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Models\\DIsk.cs",
@@ -225,12 +210,11 @@
               "RelativeToolTip": "ServerCheck\\Models\\DIsk.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAqwAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T22:28:34.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T22:28:34.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\Report.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Models\\Report.cs",
@@ -238,21 +222,44 @@
               "RelativeToolTip": "ServerCheck\\Models\\Report.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAwwBIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T22:28:02.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T22:28:02.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ReportDocument.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Helpers\\ReportDocument.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Helpers\\ReportDocument.cs",
               "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Helpers\\ReportDocument.cs",
               "RelativeToolTip": "ServerCheck\\Helpers\\ReportDocument.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA8AAAAPAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwCcAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-20T01:36:30.659Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ReportView.xaml.cs",
+              "RelativeDocumentMoniker": "ServerCheck\\Views\\ReportView.xaml.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ReportView.xaml.cs",
+              "RelativeToolTip": "ServerCheck\\Views\\ReportView.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T04:47:18.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegisterAgentServerView.xaml",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\RegisterAgentServerView.xaml",
+              "RelativeDocumentMoniker": "ServerCheck\\Views\\RegisterAgentServerView.xaml",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\RegisterAgentServerView.xaml",
+              "RelativeToolTip": "ServerCheck\\Views\\RegisterAgentServerView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-17T04:33:40.661Z"
             },
             {
               "$type": "Document",
@@ -267,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Script.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Models\\Script.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Models\\Script.cs",
@@ -275,24 +282,11 @@
               "RelativeToolTip": "ServerCheck\\Models\\Script.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T22:45:23.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T22:45:23.949Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ReportView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ReportView.xaml.cs",
-              "RelativeDocumentMoniker": "ServerCheck\\Views\\ReportView.xaml.cs",
-              "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ReportView.xaml.cs",
-              "RelativeToolTip": "ServerCheck\\Views\\ReportView.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T04:47:18.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ScriptViewModel.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\ViewModels\\ScriptViewModel.cs",
               "RelativeDocumentMoniker": "ServerCheck\\ViewModels\\ScriptViewModel.cs",
@@ -304,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ScriptView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ScriptView.xaml.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Views\\ScriptView.xaml.cs",
@@ -328,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ApiHelper.cs",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Helpers\\ApiHelper.cs",
               "RelativeDocumentMoniker": "ServerCheck\\Helpers\\ApiHelper.cs",
@@ -431,18 +425,19 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 4,
               "Title": "ProcessView.xaml",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ProcessView.xaml",
               "RelativeDocumentMoniker": "ServerCheck\\Views\\ProcessView.xaml",
               "ToolTip": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ProcessView.xaml",
               "RelativeToolTip": "ServerCheck\\Views\\ProcessView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-13T21:45:27.905Z"
+              "WhenOpened": "2025-07-13T21:45:27.905Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "ReportView.xaml",
               "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\ServerCheck\\ServerCheck\\Views\\ReportView.xaml",
               "RelativeDocumentMoniker": "ServerCheck\\Views\\ReportView.xaml",

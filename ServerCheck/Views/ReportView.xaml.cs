@@ -26,6 +26,9 @@ namespace ServerCheck.Views
             InitializeComponent();
             DataContext = new ReportViewModel();
         }
-        
+        private void ScrollToEnd(object sender, TextChangedEventArgs e)
+        {
+            (sender as TextBox)?.ScrollToEnd();
+        }
     }
 }

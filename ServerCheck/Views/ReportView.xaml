@@ -36,12 +36,12 @@
 
         <GroupBox Header="Add" Grid.Row="1">
             <StackPanel Margin="10">
-                <CheckBox x:Name="ckbEventViewer" Content="Event Viewer" Margin="5"/>
-                <CheckBox x:Name="ckbMemory" Content="Memory" Margin="5"/>
-                <CheckBox x:Name="ckbDisk" Content="Disk" Margin="5"/>
-                <CheckBox x:Name="ckbCpu" Content="CPU" Margin="5"/>
-                <CheckBox x:Name="ckbProcess" Content="Process" Margin="5"/>
-                <CheckBox x:Name="ckbService"  Content="Services" Margin="5"/>
+                <CheckBox x:Name="ckbEventViewer" Content="Event Viewer" Margin="5" IsChecked="{Binding IsCheckEventViewer, Mode=TwoWay}"/>
+                <CheckBox x:Name="ckbMemory" Content="Memory" Margin="5" IsChecked="{Binding IsCheckMemory, Mode=TwoWay}"/>
+                <CheckBox x:Name="ckbDisk" Content="Disk" Margin="5" IsChecked="{Binding IsCheckDisk, Mode=TwoWay}"/>
+                <CheckBox x:Name="ckbCpu" Content="CPU" Margin="5" IsChecked="{Binding IsCheckCpu, Mode=TwoWay}"/>
+                <CheckBox x:Name="ckbProcess" Content="Process" Margin="5" IsChecked="{Binding IsCheckProcess, Mode=TwoWay}"/>
+                <CheckBox x:Name="ckbService"  Content="Services" Margin="5" IsChecked="{Binding IsCheckService, Mode=TwoWay}"/>
             </StackPanel>
         </GroupBox>
 
@@ -72,7 +72,8 @@
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="Seconds"
                          VerticalAlignment="Center"
-                         Margin="0,0,15,0"/>
+                         Margin="0,0,15,0"
+                         />
                     <xctk:IntegerUpDown                    
                         Width="100" 
                         Minimum="0" 
@@ -90,7 +91,7 @@
                         Width="100" 
                         Minimum="0" 
                         Maximum="100" 
-                        Value="{Binding Interval, Mode=TwoWay}"
+                        Value="{Binding IntervalSeconds, Mode=TwoWay}"
                         Increment="1" Margin="5,0,0,0"
                         IsEnabled="{Binding IsChecked, ElementName=chkActivate}"/>
                 </StackPanel>
@@ -126,7 +127,8 @@
                  BorderThickness="1"
                  Padding="2"
                  Grid.RowSpan="5"
-                 Grid.Column="1"/>
+                 Grid.Column="1"
+                 TextChanged="ScrollToEnd"/>
 
         <Button Content="Start" 
              Grid.Row="5"
