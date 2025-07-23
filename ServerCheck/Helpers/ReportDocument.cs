@@ -33,6 +33,16 @@ namespace ServerCheck.Helpers
                         column.Item().PaddingBottom(20).Text(_header).Bold().FontSize(20);
                         column.Item().Text(_text);
                     });
+
+                page.Footer()
+                  .AlignCenter()
+                  .Text(text =>
+                  {
+                      text.Span("Page ");
+                      text.CurrentPageNumber();
+                      text.Span(" of ");
+                      text.TotalPages();
+                  });
             });
         }
     }

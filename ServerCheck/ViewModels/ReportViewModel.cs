@@ -38,13 +38,36 @@ namespace ServerCheck.ViewModels
         private bool isMonitoringEnabled;
 
         [ObservableProperty]
-        private int? seconds = 0;
+        private bool isCheckEventViewer;
 
         [ObservableProperty]
-        private int? interval = 5;
+        private bool isCheckMemory;
+
+        [ObservableProperty]
+        private bool isCheckDisk;
+
+        [ObservableProperty]
+        private bool isCheckCpu;
+
+        [ObservableProperty]
+        private bool isCheckProcess;
+
+        [ObservableProperty]
+        private bool isCheckService;
+
+
+        [ObservableProperty]
+        private int? seconds = 2;
+
+        [ObservableProperty]
+        private int? intervalSeconds = 1;
 
         [ObservableProperty]
         private WebApiServers? selectedServer;
+
+        private string _output = "";
+
+        private static List<string> _listOutput = new List<string>();
 
         [RelayCommand]
         private void SelectFolder()
@@ -69,34 +92,84 @@ namespace ServerCheck.ViewModels
                 MessageBox.Show($"{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
         [RelayCommand]
         private async Task Start()
         {
             try
             {
+                string response = "";
+                Report result;
                 LogOutput = "";
-                var response = await ApiHelper.GenerateReport(SelectedServer.Host, SelectedServer.Port);
 
-                var date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                var dateOld = DateTime.Now;
 
-                var result = JsonSerializer.Deserialize<Report>(response);
+                if (IsMonitoringEnabled)
+                {
+                    while ((DateTime.Now - dateOld).TotalSeconds <= Seconds)
+                    {
+                        _output = await GetReport();
+                        _listOutput.Add(_output);
+                        LogOutput += _output;
+                    }
+                }
+                else
+                {
+                    _output = await GetReport();
+                    _listOutput.Add(_output);
+                    LogOutput += _output;
+                }
 
-                var output = $"""
-                    {date}
-                    {result.Cpu}
-                    {result.Memory}
-                    {string.Join("\n", result.ListDisk.Select(x => x.ToString()))}
-                """;
+                if (isOptionSelectedPDF)
+                {
+                    ReportDocument reportPdf = new ReportDocument(string.Join("\r\n", _listOutput), $"Server: {SelectedServer.Host}. Port: {SelectedServer.Port}");
+                    QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
+                    reportPdf.GeneratePdf(Path.Combine(TextFolder, $"Report_Hardware_{DateTime.Now.ToString("yyyy-MM-dd_HHmmss")}.pdf"));
+                }else if (isOptionSelectedCSV)
+                {
 
-                LogOutput = output;
+                }
+                else if (isOptionSelectedXlsx)
+                {
 
-                var reportPdf = new ReportDocument(output, $"Server: {SelectedServer.Host}. Port: {SelectedServer.Port}");
-                QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
-                reportPdf.GeneratePdf(Path.Combine(TextFolder, $"Report_{DateTime.Now.ToString("yyyy-MM-dd_HHmmss")}.pdf"));
+                }
+                else
+                {
+                    MessageBox.Show($"Select one type file extension.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private async Task<string> GetReport()
+        {
+            try
+            {
+                var response = await ApiHelper.GenerateReport(SelectedServer.Host, SelectedServer.Port);
+                var result = JsonSerializer.Deserialize<Report>(response);
+                _output =                 
+                    (IsCheckCpu ? result.Cpu + "\n" : "") +
+                    (IsCheckMemory ? result.Memory + "\n" : "") +
+                    (IsCheckDisk ? string.Join("\n", result.ListDisk.Select(x => x.ToString())) : "");
+
+                _output = string.Join("\n",
+                    _output.Split('\n')
+                            .Select(line => line.Trim())
+                            .Where(line => !string.IsNullOrEmpty(line))
+                );
+
+                _output =
+                    "\n____________________________________________________________________________\n" +
+                    $"Date Collect: {DateTime.Now:yyyy-MM-dd HH:mm:ss}\n" +
+                    _output;
+                return _output;
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
     }
