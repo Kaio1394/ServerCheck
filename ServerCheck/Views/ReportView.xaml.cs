@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServerCheck.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,13 +17,18 @@ using System.Windows.Shapes;
 namespace ServerCheck.Views
 {
     /// <summary>
-    /// Interaction logic for StartStopView.xaml
+    /// Interaction logic for ReportView.xaml
     /// </summary>
-    public partial class StartStopView : UserControl
+    public partial class ReportView : UserControl
     {
-        public StartStopView()
+        public ReportView()
         {
             InitializeComponent();
+            DataContext = new ReportViewModel();
+        }
+        private void ScrollToEnd(object sender, TextChangedEventArgs e)
+        {
+            (sender as TextBox)?.ScrollToEnd();
         }
     }
 }

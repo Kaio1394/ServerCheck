@@ -1,5 +1,4 @@
-﻿using ServerCheck.Models;
-using ServerCheck.ViewModels;
+﻿using ServerCheck.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,14 +17,14 @@ using System.Windows.Shapes;
 namespace ServerCheck.Views
 {
     /// <summary>
-    /// Interaction logic for ServicesView.xaml
+    /// Interaction logic for EventViewerView.xaml
     /// </summary>
-    public partial class ServicesView : UserControl
+    public partial class EventViewerView : UserControl
     {
-        public ServicesView()
+        public EventViewerView()
         {
             InitializeComponent();
-            DataContext = new ServicesViewModel();
+            DataContext = new EventViewerViewModel();
         }
     }
 }

@@ -2,7 +2,16 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Views\EventViewerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ProcessView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\RegisterAgentServerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ReportView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\ScriptView.xaml.cs">
@@ -11,12 +20,21 @@
     <Compile Update="Views\ServicesView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\StartStopView.xaml.cs">
+    <Compile Update="Windows\EditWebApiServerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\EventViewerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ProcessView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\RegisterAgentServerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ReportView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ScriptView.xaml">
@@ -25,7 +43,7 @@
     <Page Update="Views\ServicesView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\StartStopView.xaml">
+    <Page Update="Windows\EditWebApiServerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
